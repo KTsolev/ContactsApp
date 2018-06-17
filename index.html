@@ -12,15 +12,16 @@
     <title>TypeScript Contact App</title>
   </head>
   <body>
-    <h1>Hello world webpack</h1>
-    <h1 class="display-4 mt-3 mb-3 text-center">TypeScript Contact App</h1>
-    <div class="contact-list">
-    <div class="contact-list__header">
-        <input type="text" class="contact-list__search" placeholder="name" />
-        <span class="contact-list__new">New</span>
-        <div class="contacts"></div>
+    <div class="app">
+      <h1 class="app__header">TypeScript Contact App</h1>
+      <div class="contacts">
+          <div class="contacts-header">
+            <input type="text" class="contacts-header__search" placeholder="Search by name..." />
+            <span class="contacts-header__new">New</span>
+          </div>
+          <div class="contacts__list"></div>
+      </div>
     </div>
-</div>
     <script src="../dist/bundle.js"></script>
   </body>
 </html>

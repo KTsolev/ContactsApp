@@ -1,15 +1,18 @@
 export default class ContactModel {
-  id:number;
   name:string;
-  phoneNumber:number;
-  phoneNumberWork:number;
-  email:string;
+  phoneNumber:string;
+  phoneNumberWork?:string;
+  email?:string;
+  isMale?:boolean;
+  id?:number;
 
-  constructor (id:number, name:string, phoneNumber:number, phoneNumberWork:number, email:string) {
+
+  constructor (name:string, phoneNumber:string, phoneNumberWork:string, email:string, isMale:boolean, id:number) {
     this.id = id;
     this.name = name;
     this.phoneNumber = phoneNumber;
     this.phoneNumberWork = phoneNumberWork;
     this.email = email;
+    this.isMale = isMale;
   }
 }
